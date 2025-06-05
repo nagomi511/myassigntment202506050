@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="form-container">
+    <h1><span>Student</span> Registration</h1>
+    <p>Please fill out all required fields to complete your registration</p>
+    <form>
+      <div class="form-row">
+        <label>First Name *<input type="text" required></label>
+        <label>Last Name *<input type="text" required></label>
+      </div>
+
+      <label>Email Address *<input type="email" required></label>
+
+      <div class="form-row">
+        <label>Phone Number<input type="tel"></label>
+        <label>Date of Birth<input type="date"></label>
+      </div>
+
+      <label>Program of Study *<select required>
+        <option value="">Select your program</option>
+      </select></label>
+
+      <fieldset>
+        <legend>Year Level *</legend>
+        <label><input type="radio" name="year" required> Freshman</label>
+        <label><input type="radio" name="year"> Sophomore</label>
+        <label><input type="radio" name="year"> Junior</label>
+        <label><input type="radio" name="year"> Senior</label>
+      </fieldset>
+
+    <fieldset>
+        <legend>Interests (Select all that apply)</legend>
+        <div class="checkbox-grid">
+            <label><input type="checkbox"> Sports & Recreation</label>
+            <label><input type="checkbox"> Music & Arts</label>
+            <label><input type="checkbox"> Technology</label>
+            <label><input type="checkbox"> Volunteering</label>
+            <label><input type="checkbox"> Reading & Writing</label>
+            <label><input type="checkbox"> Travel & Culture</label>
+        </div>
+    </fieldset>
+
+    <label>Additional Comments
+        <textarea placeholder="Tell us anything else you'd like us to know..."></textarea>
+      </label>
+      
+      <button type="submit">Complete Registration</button>      
